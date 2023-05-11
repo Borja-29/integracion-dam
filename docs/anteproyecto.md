@@ -4,28 +4,16 @@
 
 ## OBJETIVOS
 
-*[TODO] Se indicará de forma genérica y sin entrar en concreciones el objetivo
-que se pretende alcanzar al realizar el proyecto. Se indicará igualmente donde
-será utilizado el proyecto obtenido.*
-
-## PREANALISIS DE LO EXISTENTE (Opcional)
-
-*[TODO] Si procede, se informará brevemente sobre el funcionamiento del sistema actual. El que vamos a reemplazar o a mejorar. Este sistema no tiene por qué estar necesariamente automatizado pudiendo realizarse actualmente de forma manual por personas.*
+Tomando como referencia un proyecto realizado por mis compañeros durante el curso, realizaré una aplicación web en donde se mostrarán todas las criaturas de la saga Pokémon y parte de su información de fomrma organizada.
 
 ## ANÁLISIS DEL SOFTWARE
 
-*[TODO] Determinar de forma genérica lo que tiene que hacer el software y cuáles son los requisitos que debe cumplir.*
-
-*Si el proyecto trata sobre la adaptación o ampliación de algún software existente, se deberá aportar información sobre el mismo (documentos electrónicos, direcciones URL, etc.), delimitando claramente cuál será el trabajo que se realizará y que funcionalidad ya está implementada.*
-
-> *Incuir los diagramas necesarios*
+La aplicación realizará una petición para obtener los datos de una API externa llamada [PokéAPI](https://pokeapi.co/), en donde se encuentra toda la información que se quiere mostrar. Una vez filtrado su contenido, se mostrará de forma organizada en la página web.
 
 ## DISEÑO DEL SOFTWARE
 
-*[TODO] Propuesta de posibles opciones de implementación del software que hay que construir, determinar cómo se va a llevar a cabo la implementación.*
-
->  *Incluir los diagramas necesarios.*
+Para realizar el proyecto, será necesario trabajar tanto en Backend como en Frontend. Para el Backend usaré Java Spring Boot, un entorno de desarrollo de desarrollo de código abierto especializado en el desarrollo de aplicaciones web que usa Java como lenguaje de programación. Para el Frontend utilizaré Angular, un framework también de código abierto y sirve para desarrollar aplicaciones web de una sola página (SPA) mediante TypeScript, un lenguaje derivado de JavaScript. Con lo relacionado a el estilo que tendrá la página web, haré uso de Bootstrap, otro framework que combina CSS y JavaScript para estilizar los elementos de una página HTML.
 
 ## ESTIMACIÓN DE COSTES
 
-*[TODO] Estimar el coste que representará la creación del proyecto. Esta estimación será temporal y/o económica si procede (costes de contratación de servicios en la nube, por ejemplo).*
+Dado que trabajaré con tecnologías nuevas que estoy aprendiendo a usar en las prácticas de empresa, consumiré una parte del tiempo en buscar la información necesaria para la realización, sobretodo en el lado de Frontend. Sin embargo, estimo que podré terminar el apartado funcional de la aplicación en una semana más trabajando a tres horas al día (21 horas), lo que me dejaría el resto del tiempo para usarlo en el apartado artístico de la web, el cual terminaré cuanado encuantre un resultado satisfactorio. En cuanto a coste monetario, dado que todas los recursos utilizados son gratuitos, no habrá ningún gasto monetario.
