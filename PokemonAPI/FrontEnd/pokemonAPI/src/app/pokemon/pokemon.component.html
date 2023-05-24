@@ -1,0 +1,31 @@
+<div class="card border-success mb-3">
+    <div class="card-header">Pokemon</div>
+    <div class="card-body text-success">
+      <h5 class="card-title">Listado de pokemon</h5>
+
+<div *ngIf="pokemons.length == 0" class="alert alert-info">
+No hay registros en la base de datos
+</div>
+
+      <table class="table table-bordered table-striped" *ngIf="pokemons.length>0">
+        <thead>
+            <tr>
+              <th>imagen</th>
+                <th>nombre</th>
+                <th>tipos</th>
+                <th>habilidades</th>
+                <th>estadísticas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let pokemon of pokemons">
+                <td>{{ pokemon.sprite }}</td>
+                <td>{{ pokemon.name }}</td>
+                <td>{{ pokemon.types }}</td>
+                <td>{{ pokemon.abilities }}</td>
+                <td>{{ pokemon.stats }}</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

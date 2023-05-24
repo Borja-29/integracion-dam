@@ -78,7 +78,7 @@ public class PokemonServiceImpl implements PokemonService {
 	}
 	
 	public List<MyPokemon> getPokemonListByLength(int length, int offset) {
-		Client.CACHE = false;
+		//Client.CACHE = false;
 		NamedAPIResourceList list = Client.getPokemonList(length, offset);
 		List<MyPokemon> pokemonList = new ArrayList<MyPokemon>();
 		for (NamedAPIResource nar:list.getResults()) {
