@@ -1,0 +1,47 @@
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+.th-principal {
+    background-color: #F1CEAF;
+}
+
+
+tr:nth-child(even) {
+    background-color: #D6EEEE;
+    
+  }
+  tr:nth-child(odd) {
+    background-color: #AFF1BC;
+    
+  }
+
+  .center, .th-principal, .td-principal {
+    border: 1px solid black;
+  }
+
+  th, td {
+    text-align: center;
+    padding: 13px;
+    font-family: Arial black;
+  }
+  h1 {
+    font-family: impact;
+    text-align: center;
+  }
+
+  .th-stats{
+    background-color: #FCF6D6;
+  }
+
+  .td-stats{
+    background-color: #FAF8E9;
+  }
+
+  .table-stats, .td-stats, .th-stats{
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+

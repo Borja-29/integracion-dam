@@ -1,0 +1,51 @@
+<div class="card border-success mb-3">
+    <div class="card-body text-success">
+        <h1 class="card-title">FIRST GENERATION POKEMON LIST</h1>
+
+        <div *ngIf="pokemons.length == 0" class="alert alert-info">
+            LOADING, PLS WAIT
+            <br>
+            <img src="/assets/pikachu-running.gif">
+        </div>
+
+        <table id="tr" class="center" *ngIf="pokemons.length>0">
+            <thead>
+                <tr>
+                    <th class="th-principal">SPRITE</th>
+                    <th class="th-principal">NAME</th>
+                    <th class="th-principal">TYPES</th>
+                    <th class="th-principal">ABILITIES</th>
+                    <th class="th-principal">STATS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let pokemon of pokemons">
+                    <td class="td-principal"><img [src]="pokemon.sprite" alt="Los Tejos" /></td>
+                    <td class="td-principal">{{ pokemon.name }}</td>
+                    <td class="td-principal">{{ pokemon.types }}</td>
+                    <td class="td-principal">{{ pokemon.abilities }}</td>
+                    <td class="td-principal">
+                        <table class="table-stats">
+                            <tr>
+                                <th class="th-stats">HP</th>
+                                <th class="th-stats">Attack</th>
+                                <th class="th-stats">Defense</th>
+                                <th class="th-stats">SP-Attack</th>
+                                <th class="th-stats">SP-Defense</th>
+                                <th class="th-stats">Speed</th>
+                            </tr>
+                            <tr>
+                                <td class="td-stats">{{ pokemon.stats[0] }}</td>
+                                <td class="td-stats">{{ pokemon.stats[1] }}</td>
+                                <td class="td-stats">{{ pokemon.stats[2] }}</td>
+                                <td class="td-stats">{{ pokemon.stats[3] }}</td>
+                                <td class="td-stats">{{ pokemon.stats[4] }}</td>
+                                <td class="td-stats">{{ pokemon.stats[5] }}</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
