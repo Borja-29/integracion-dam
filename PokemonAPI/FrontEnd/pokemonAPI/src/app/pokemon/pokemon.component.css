@@ -1,16 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
-html{
-    position:relative;
-    min-height: max-content;
-    background: linear-gradient(90deg, rgba(218,231,110,1) 0%, rgba(175,227,113,1) 50%, rgba(218,231,110,1) 100%);
-}
-body{
-    margin-bottom: 60px;
-}
 
-.wrap{
-    padding-bottom: 60px;
-}
 .center{
     margin-left: auto;
     margin-right: auto;
@@ -54,10 +42,6 @@ tr:nth-child(even) {
   .table-stats, .td-stats, .th-stats{
     border: 1px solid black;
     border-collapse: collapse;
-  }
-
-  .alert{
-    text-align: center;
   }
 
 

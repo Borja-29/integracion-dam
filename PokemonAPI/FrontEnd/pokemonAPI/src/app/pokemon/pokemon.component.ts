@@ -6,7 +6,8 @@ import { tap } from 'rxjs';
 
 @Component({
   selector: 'app-pokemon',
-  templateUrl: './pokemon.component.html'
+  templateUrl: './pokemon.component.html',
+  styleUrls: ['./pokemon.component.css']
 })
 export class PokemonComponent implements OnInit{
 
@@ -15,17 +16,11 @@ export class PokemonComponent implements OnInit{
   constructor(private pokemonService: PokemonService) { }
 
   ngOnInit() {
-   this.cargarPokemonSegundaGen();
+   this.cargarPokemon();
   }
 
   cargarPokemon(): void{
     this.pokemonService.getPokemons().pipe(
-      tap(pokemons => this.pokemons = pokemons)
-    ).subscribe();
-  }
-
-  cargarPokemonPrimeraGen(): void{
-    this.pokemonService.getPokemonsPrimeraGen().pipe(
       tap(pokemons => this.pokemons = pokemons)
     ).subscribe();
   }
